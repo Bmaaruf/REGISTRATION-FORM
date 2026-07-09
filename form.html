@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        background: #363aa8;
+        /* background: linear-gradient(
+                90deg,
+                rgba(54, 58, 168, 1) 0%,
+                rgba(0, 0, 252, 0.55) 0%,
+                rgba(0, 212, 255, 0.82) 98%
+              ); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        color: #5b616a;
+      }
+
+      .container {
+        border: 3px solid;
+        height: 50rem;
+        padding: 40px 56px;
+        background-color: #f7f7f7;
+        border-radius: 32px;
+        min-width: 600px;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .accent {
+        color: #275dad;
+        font-size: 24px;
+        letter-spacing: 0.8px;
+        margin-bottom: 24px;
+      }
+      .form-heading {
+        color: #5b616a;
+        font-size: 40px;
+        margin-bottom: 24px;
+      }
+      .form-about {
+        font-size: 16px;
+        margin-bottom: 32px;
+      }
+      .form-body {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      input {
+        padding: 16px 16px;
+        border: none;
+        box-shadow: -1px 0px 23px 7px rgba(171, 169, 195, 0.24);
+        -webkit-box-shadow: -1px 0px 23px 7px rgba(171, 169, 195, 0.24);
+        -moz-box-shadow: -1px 0px 23px 7px rgba(171, 169, 195, 0.24);
+        border-radius: 8px;
+      }
+      .checkbox {
+        margin-top: 24px;
+        margin-bottom: 32px;
+        font-size: 16px;
+      }
+      button {
+        width: 100%;
+        padding: 16px;
+        font-size: 24px;
+        color: #fcf7f8;
+        background-color: #4f287c;
+        border-radius: 16px;
+      }
+      a {
+        text-decoration: none;
+        color: #275dad;
+      }
+      .form-body label {
+        color: #25283d;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="registeration.com" method="POST" novalidate>
+      <div class="container">
+        <div class="main">
+          <p class="accent">ACCOUNT SETUP</p>
+          <h1 class="form-heading">Create your account</h1>
+          <p class="form-about">
+            Fill in your details below to get started. It takes less than a
+            minute
+          </p>
+          <div class="info">
+            <div class="form-body">
+              <label for="full-name">Full name</label>
+              <input
+                type="text"
+                id="full-name"
+                name="full-name"
+                required
+                placeholder="Bash Maaruf"
+              />
+            </div>
+            <div class="form-body">
+              <label for="email">Email address </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="bashmaaruf@gmail.com"
+              />
+            </div>
+            <div class="form-body">
+              <label for="password">password</label>
+              <input name="password" type="password" id="password" />
+            </div>
+            <div class="form-body">
+              <label for="confirm-password">Confirm password</label>
+              <input name="password" type="password" id="password" />
+            </div>
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                id="consent"
+                name="consent"
+                class="consent"
+              />
+              <label for="consent">
+                i agree to the
+                <a href="#">Terms and serivice</a> and
+                <a href="#">Privacy Policy</a></label
+              >
+            </div>
+            <div class="button">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
