@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 120vh;
+  min-height: 100vh;
   color: #5b616a;
   accent-color: #48125f;
   /* padding: 152px; */
